@@ -128,3 +128,12 @@
     @apply font-mono;
   }
 }
+
+@layer components {
+  .glass-element {
+    @apply bg-black/50 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-6 text-white;
+  }
+  .nav-text {
+    @apply pointer-events-auto hover:text-[#C9080E] hover:font-bold hover:scale-105 transition-all duration-300;
+  }
+}
