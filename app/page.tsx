@@ -1,12 +1,11 @@
 import Image from "next/image";
 import AnimatedContent from "@/components/AnimatedContent";
-import StrokeText from "@/components/StrokeText";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <AnimatedContent className="flex justify-center items-center w-screen p-0" distance={600} direction="vertical" duration={1.15} ease="power3.out" initialOpacity={0} animateOpacity scale={1} threshold={.1} delay={0}>
+      <AnimatedContent className="flex justify-center mt-26 w-screen p-0" distance={1000} direction="vertical" duration={1.15} ease="power3.out" initialOpacity={0} animateOpacity scale={1} threshold={.1} delay={0}>
         <div className="glass-element pt-12 pb-12 w-fit max-w-3/4 flex flex-row justify-center items-center gap-x-12">
           <img src="https://avatars.githubusercontent.com/u/107844615?v=4" alt="pfp" className="border-2 border-white/20 shadow-accent rounded-full w-86" />
           <div className="flex flex-col justify-center">

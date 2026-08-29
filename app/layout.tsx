@@ -67,7 +67,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Link href="/contact" className="nav-text">About me</Link>
           <Link href="/support" className="nav-text">Support me</Link>
         </header>
-        <main className="z-0 min-h-screen flex flex-col justify-center items-center pointer-events-none">
+        <main className="z-0 min-h-screen flex flex-col pointer-events-none">
           {children}
         </main>
       </body>
