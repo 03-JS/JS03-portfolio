@@ -61,11 +61,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             opacity={1}
           /> */}
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-16 flex justify-end gap-x-10 items-center pointer-events-none">
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-16 flex justify-end gap-x-10 items-center pointer-events-none z-1">
           <Link href="/" className="nav-text">Home</Link>
           <Link href="/projects" className="nav-text">Projects</Link>
-          <Link href="/contact" className="nav-text">Contact</Link>
-          <Link href="/contact" className="nav-text">About me</Link>
+          {/* <Link href="/contact" className="nav-text">Contact</Link> */}
+          {/* <Link href="/contact" className="nav-text">About me</Link> */}
           <Link href="https://ko-fi.com/js033" target="_blank" className="flex gap-x-2 justify-center items-center pointer-events-auto bg-[#72a4f2]/50 hover:bg-[#72a4f2]/75 hover:scale-105 transition-all duration-300 rounded-sm p-2 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-6" />Support me on Ko-fi</Link>
         </header>
         <main className="z-0 min-h-screen flex flex-col pointer-events-none">
