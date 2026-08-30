@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import ColorBends from '@/components/ColorBends';
 import Link from "next/link";
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
@@ -65,10 +66,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Link href="/projects" className="nav-text">Projects</Link>
           <Link href="/contact" className="nav-text">Contact</Link>
           <Link href="/contact" className="nav-text">About me</Link>
-          <Link href="/support" className="nav-text">Support me</Link>
+          <Link href="https://ko-fi.com/js033" target="_blank" className="flex gap-x-2 justify-center items-center pointer-events-auto bg-[#72a4f2]/50 hover:bg-[#72a4f2]/75 hover:scale-105 transition-all duration-300 rounded-sm p-2 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-6" />Support me on Ko-fi</Link>
         </header>
         <main className="z-0 min-h-screen flex flex-col pointer-events-none">
-          {children}
+          <TooltipProvider>{children}</TooltipProvider>
         </main>
       </body>
     </html>
