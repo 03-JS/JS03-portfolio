@@ -131,12 +131,9 @@
 
 @layer components {
   .glass-element {
-    @apply bg-black/50 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl p-6;
+    @apply bg-black/45 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl p-6;
   }
   .nav-text {
     @apply pointer-events-auto hover:text-[#C9080E] hover:font-bold hover:scale-105 transition-all duration-300;
-  }
-  .social-button {
-    @apply pointer-events-auto hover:scale-110 transition-all duration-300;
   }
 }
