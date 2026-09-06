@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import ColorBends from '@/components/ColorBends';
 import Link from "next/link";
-import { TooltipProvider } from "@/components/ui/tooltip"
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-mono", jetbrainsMono.variable)}
     >
-      <body className="min-h-full flex flex-col items-center bg-black text-white font-sans">
+      <body className="min-h-full flex flex-col items-center bg-black text-white font-sans" cz-shortcut-listen="true">
         <div className="fixed inset-0 h-screen w-screen overflow-hidden">
           <ColorBends
             colors={["#C9080E", "#C9080E", "#C9080E"]}
@@ -61,14 +61,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             opacity={1}
           /> */}
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-16 flex justify-end gap-x-10 items-center pointer-events-none z-1">
-          <Link href="/" className="nav-text">Home</Link>
-          <Link href="/projects" className="nav-text">Projects</Link>
-          {/* <Link href="/contact" className="nav-text">Contact</Link> */}
-          {/* <Link href="/contact" className="nav-text">About me</Link> */}
-          <Link href="https://ko-fi.com/js033" target="_blank" className="flex gap-x-2 justify-center items-center pointer-events-auto bg-[#72a4f2]/50 hover:bg-[#72a4f2]/75 hover:scale-105 transition-all duration-300 rounded-sm p-2 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-6" />Support me on Ko-fi</Link>
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold text-md">
+          <Link href="/" className="flex gap-x-3 items-center justify-center pointer-events-auto hover:text-[#ff0000] transition-all duration-300">
+            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-12 h-12 rounded-full" />
+            JS03
+          </Link>
+          <div className="flex gap-x-8 items-center justify-center">
+            <Link href="#projects" className="nav-text">Projects</Link>
+            <Link href="/contact" className="nav-text">Videos</Link>
+            <Link href="/contact" className="nav-text">Contact</Link>
+          </div>
         </header>
-        <main className="z-0 min-h-screen flex flex-col pointer-events-none">
+        <main className="z-0 min-h-screen flex flex-col pointer-events-none justify-center items-center gap-y-8 mt-26 mb-8 w-screen p-0">
           <TooltipProvider>{children}</TooltipProvider>
         </main>
       </body>

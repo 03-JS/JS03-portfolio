@@ -121,11 +121,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-mono;
+    scroll-behavior: smooth;
   }
 }
 
@@ -133,7 +136,18 @@
   .glass-element {
     @apply bg-black/45 backdrop-blur-md border border-white/20 shadow-lg rounded-2xl p-6;
   }
+
   .nav-text {
-    @apply pointer-events-auto hover:text-[#C9080E] hover:font-bold hover:scale-105 transition-all duration-300;
+    @apply pointer-events-auto hover:text-[#ff0000] hover:scale-110 transition-all duration-300;
+  }
+}
+
+@layer base {
+  .font-outline {
+    -webkit-text-stroke: 1px black;
+  }
+
+  .font-outline-red {
+    -webkit-text-stroke: 1px red;
   }
 }
