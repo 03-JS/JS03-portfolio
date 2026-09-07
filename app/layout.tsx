@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import ColorBends from '@/components/ColorBends';
 import Link from "next/link";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import FaultyTerminal from "@/components/FaultyTerminal";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
@@ -32,20 +33,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col items-center bg-black text-white font-sans" cz-shortcut-listen="true">
         <div className="fixed inset-0 h-screen w-screen overflow-hidden">
           <ColorBends
-            colors={["#C9080E", "#C9080E", "#C9080E"]}
-            rotation={90}
+            colors={["#7700ff", "#7700ff", "#7700ff"]}
             speed={0.2}
-            scale={1}
-            frequency={1}
-            warpStrength={1}
-            mouseInfluence={1}
-            noise={0.15}
-            parallax={0.5}
-            iterations={1}
-            intensity={1.5}
+            frequency={1.0}
+            noise={0}
             bandWidth={3}
-            transparent
-            autoRotate={0}
+            rotation={90}
+            iterations={3}
+            intensity={2}
+            autoRotate={1}
           />
           {/* <SideRays
             speed={2.5}
@@ -61,15 +57,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             opacity={1}
           /> */}
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold text-md">
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold">
           <Link href="/" className="flex gap-x-3 items-center justify-center pointer-events-auto hover:text-[#ff0000] transition-all duration-300">
-            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-12 h-12 rounded-full" />
+            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-10 h-10 rounded-full" />
             JS03
           </Link>
           <div className="flex gap-x-8 items-center justify-center">
             <Link href="#projects" className="nav-text">Projects</Link>
-            <Link href="/contact" className="nav-text">Videos</Link>
-            <Link href="/contact" className="nav-text">Contact</Link>
+            <Link href="#videos" className="nav-text">Videos</Link>
+            <Link href="#contact" className="nav-text">Contact</Link>
           </div>
         </header>
         <main className="z-0 min-h-screen flex flex-col pointer-events-none justify-center items-center gap-y-8 mt-26 mb-8 w-screen p-0">
