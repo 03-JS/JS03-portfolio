@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import ColorBends from '@/components/ColorBends';
 import Link from "next/link";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import FaultyTerminal from "@/components/FaultyTerminal";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
@@ -43,19 +42,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             intensity={2}
             autoRotate={1}
           />
-          {/* <SideRays
-            speed={2.5}
-            rayColor1="#7C3AED"
-            rayColor2="#C9080E"
-            intensity={2}
-            spread={2}
-            origin="top-left"
-            tilt={0}
-            saturation={1.5}
-            blend={0.75}
-            falloff={1.6}
-            opacity={1}
-          /> */}
         </div>
         <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold">
           <Link href="/" className="flex gap-x-3 items-center justify-center pointer-events-auto hover:text-[#ff0000] transition-all duration-300">
