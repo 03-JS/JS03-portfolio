@@ -1,89 +1,111 @@
+"use client";
 import Link from "next/link";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { motion } from "framer-motion";
+
+const MotionLink = motion.create(Link);
 
 export default function Home() {
   return (
     <>
-      <section id="home" className="flex justify-center items-center w-full">
-        <div className="glass-element p-10 w-[80%] flex flex-row items-start justify-center gap-x-8">
-          <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="pointer-events-auto border-2 border-white/20 rounded-4xl w-64 transition-all duration-300 hover:scale-105 hover:ring-2 hover:ring-rose-500 hover:shadow-[0px_0px_25px_rgba(255,32,86,1)] hover:border-black" />
-          <div className="flex flex-col justify-center w-full">
-            <p className="text-5xl font-bold">Hi! I'm JS03</p>
-            <p className="mt-3 text-white/80">
-              Though most people just call me JS.
-            </p>
-            <p className="mt-3 text-white/80">
-              I'm a software developer with a passion for gaming, modding and game development. I have been creating content related to video games since 2018, some of which has been downloaded and/or viewed by millions of people around the world!
-            </p>
-            <p className="mt-3 text-white/80">
-              I have also made a couple of games in my free time using the <span className="font-bold">Godot</span> and <span className="font-bold">Unity</span> game engines, which you can check out below.
-            </p>
-            <p className="mt-3 text-white/80">
-              And last but not least, I have a <Link href="https://www.youtube.com/@JS03" target="_blank" className="pointer-events-auto text-blue-500 font-bold hover:text-[#C9080E] transition-all duration-300">YouTube channel</Link> with over 2.7k subscribers in which I occasionally upload content related to things I like, such as Minecraft shader comparisons or showcases or DOOM soundtrack game rips that I make in my free time.
-            </p>
-            <div className="flex gap-x-6 mt-10 items-center">
-              <Link href="https://ko-fi.com/js033" target="_blank" className="flex gap-x-2 justify-center items-center pointer-events-auto bg-[#72a4f2] shadow-[0px_0px_15px_rgba(114,164,242,1)] hover:shadow-[0px_0px_25px_rgba(114,164,242,1)] hover:scale-105 transition-all duration-300 rounded-sm p-3 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-9" />Support me on Ko-fi</Link>
-              <Tooltip>
-                <Link href="https://github.com/03-JS" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-white/10 hover:bg-white/25 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/github-white-icon.webp" alt="github icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>GitHub</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://thunderstore.io/c/lethal-company/p/JS03/?ordering=most-downloaded" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#14B3CB]/20 hover:bg-[#14B3CB]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-9" src="/thunderstore_icon.png" alt="thunderstore icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>Thunderstore</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://modrinth.com/user/JS03" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#1bd96a]/20 hover:bg-[#1bd96a]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/Modrinth_Logo.webp" alt="modrinth icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>Modrinth</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://www.curseforge.com/members/js03/projects" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#FF784D]/20 hover:bg-[#FF784D]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/CurseForge_icon.svg" alt="curse icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>CurseForge</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://itch.io/profile/js03" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#FA5252]/20 hover:bg-[#FA5252]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/itch-io.png" alt="itch.io icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>itch.io</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://gamejolt.com/@JS03" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#2F7F6F]/20 hover:bg-[#2F7F6F]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/gamejolt_icon.png" alt="game jolt icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>Game Jolt</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://www.youtube.com/@JS03" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#ff0000]/20 hover:bg-[#ff0000]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/youtube_icon.png" alt="youtube icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>YouTube</p>
-                </TooltipContent>
-              </Tooltip>
-              <Tooltip>
-                <Link href="https://discord.gg/myZrktknah" target="_blank"><TooltipTrigger className="pointer-events-auto cursor-pointer bg-[#5665ED]/20 hover:bg-[#5665ED]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/discord-white-icon.webp" alt="discord icon" /></TooltipTrigger></Link>
-                <TooltipContent className="rounded-lg font-bold text-sm">
-                  <p>Discord</p>
-                </TooltipContent>
-              </Tooltip>
+      <section id="home" className="flex justify-center items-center w-full h-screen">
+        <div className="glass-element bg-black/70 p-0 w-[85%] h-fit flex flex-col justify-start gap-x-8 animate-fade-in-up animate-duration-1000 font-mono">
+          <div className="glass-element border-t-0 border-l-0 border-r-0 rounded-br-none rounded-bl-none w-full flex justify-between items-center p-4 fixed top-0">
+            <div className="flex gap-x-2 items-center justify-center">
+              <span className="w-3 h-3 rounded-full bg-[#ff6b6b]"></span>
+              <span className="w-3 h-3 rounded-full bg-[#ffd93d]"></span>
+              <span className="w-3 h-3 rounded-full bg-[#b7d86a]"></span>
             </div>
+            <span className="text-sm text-white/50">~/.profiles/js03</span>
+          </div>
+          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-1000 animate-delay-400 mt-12">
+            <p className="text-blue-500">~</p>
+            <p><span className="text-purple-500">{'>'}</span> fastfetch</p>
+          </div>
+          <div className="flex flex-row w-full p-10 items-start gap-x-8">
+            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-4xl w-64 transition-all duration-300 hover:ring-2 hover:ring-rose-500 hover:shadow-[0px_0px_25px_rgba(255,32,86,1)] hover:border-black" />
+            <div className="flex flex-col justify-center w-full">
+              <p className="text-5xl font-bold">Hi! I'm JS03</p>
+              <p className="mt-3 text-white/80">
+                Though most people just call me JS.
+              </p>
+              <p className="mt-3 text-white/80">
+                I'm a software developer with a passion for gaming, modding and game development. I have been creating content related to video games since 2018, some of which has been downloaded and/or viewed by millions of people around the world!
+              </p>
+              <p className="mt-3 text-white/80">
+                I have also made a couple of games in my free time using the <span className="font-bold">Godot</span> and <span className="font-bold">Unity</span> game engines, which you can check out below.
+              </p>
+              <p className="mt-3 text-white/80">
+                And last but not least, I have a <Link href="https://www.youtube.com/@JS03" target="_blank" className=" text-blue-500 font-bold hover:text-rose-500 red-underline">YouTube channel</Link> with over 2.7k subscribers in which I occasionally upload content related to things I like, such as Minecraft shader comparisons or showcases or DOOM soundtrack game rips that I make in my free time.
+              </p>
+              <div className="flex gap-x-6 mt-10 items-center">
+                <Link href="https://ko-fi.com/js033" target="_blank" className="animate-fade-in-up animate-duration-600 animate-delay-1000 flex gap-x-2 justify-center items-center bg-[#72a4f2] shadow-[0px_0px_15px_rgba(114,164,242,1)] hover:shadow-[0px_0px_25px_rgba(114,164,242,1)] hover:scale-105 transition-all duration-300 rounded-sm p-3 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-9" />Support me on Ko-fi</Link>
+                <Tooltip>
+                  <Link href="https://github.com/03-JS" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-1300 cursor-pointer bg-white/10 hover:bg-white/25 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/github-white-icon.webp" alt="github icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">GitHub</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://thunderstore.io/c/lethal-company/p/JS03/?ordering=most-downloaded" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-1600 cursor-pointer bg-[#14B3CB]/20 hover:bg-[#14B3CB]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-9" src="/thunderstore_icon.png" alt="thunderstore icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">Thunderstore</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://modrinth.com/user/JS03" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-1900 cursor-pointer bg-[#1bd96a]/20 hover:bg-[#1bd96a]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/Modrinth_Logo.webp" alt="modrinth icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">Modrinth</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://www.curseforge.com/members/js03/projects" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-2200  cursor-pointer bg-[#FF784D]/20 hover:bg-[#FF784D]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/CurseForge_icon.svg" alt="curse icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">CurseForge</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://itch.io/profile/js03" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-2500 cursor-pointer bg-[#FA5252]/20 hover:bg-[#FA5252]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/itch-io.png" alt="itch.io icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">itch.io</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://gamejolt.com/@JS03" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-2800 cursor-pointer bg-[#2F7F6F]/20 hover:bg-[#2F7F6F]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/gamejolt_icon.png" alt="game jolt icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">Game Jolt</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://www.youtube.com/@JS03" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-3200 cursor-pointer bg-[#ff0000]/20 hover:bg-[#ff0000]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/youtube_icon.png" alt="youtube icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">YouTube</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://discord.gg/myZrktknah" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-3500 cursor-pointer bg-[#5665ED]/20 hover:bg-[#5665ED]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-300"><img className="w-8" src="/discord-white-icon.webp" alt="discord icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">Discord</p>
+                  </TooltipContent>
+                </Tooltip>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold">
+            <p className="text-blue-500">~</p>
+            <p><span className="text-purple-500">{'>'}</span> <span className="animate-caret-blink">_</span></p>
           </div>
         </div >
       </section>
       <section id="projects" className="flex justify-center items-center w-full">
-        <div className="glass-element w-[80%] flex flex-col gap-y-6">
+        <div className="glass-element w-[85%] flex flex-col gap-y-6">
           <p className="font-bold text-4xl mb-4">Projects</p>
           <div className="grid grid-cols-3 gap-6">
-            <Link href="" className="items-center flex gap-x-6 pointer-events-auto bg-blue-400/35 hover:bg-blue-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="" className="items-center flex gap-x-6  bg-blue-400/35 hover:bg-blue-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/VEGA_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -94,7 +116,7 @@ export default function Home() {
                 <p className="text-white/80 text-sm">Adds VEGA, a sentient AI from DOOM (2016) and DOOM Eternal, to <span className="font-bold">Lethal Company</span>. The mod uses <span className="font-bold">SpeechRecognitionAPI</span> to implement voice commands with which you can ask VEGA to do almost anything within the game. VEGA is also capable of doing some actions on his own.</p>
               </div>
             </Link>
-            <Link href="/projects/SpeechRecognitionAPI" className="items-center flex gap-x-6 pointer-events-auto bg-pink-400/35 hover:bg-pink-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="/projects/SpeechRecognitionAPI" className="items-center flex gap-x-6 bg-pink-400/35 hover:bg-pink-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/speech_icon.png" alt="" className="w-32 h-32 rounded-xl" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -105,7 +127,7 @@ export default function Home() {
                 <p className="text-white/80 text-sm"><span className="font-bold">VOSK</span> based automatic speech recognition API for <span className="font-bold">Lethal Company</span>. Allows for real time transcription and voice commands. Developers can use it to build their own features, such as adding voice commands or real time speech transcription.</p>
               </div>
             </Link>
-            <Link href="/projects/FNaF-Rewired" className="items-center flex gap-x-6 pointer-events-auto bg-[#ff0000]/35 hover:bg-[#ff0000]/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="/projects/FNaF-Rewired" className="items-center flex gap-x-6 bg-[#ff0000]/35 hover:bg-[#ff0000]/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/FNaF Rewired Icon 2.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -116,7 +138,11 @@ export default function Home() {
                 <p className="text-white/80 text-sm">Five Nights at Freddy's Rewired is a re-imagining of the original Five Nights at Freddy's game that features an actual 3D environment, new mechanics, easter eggs and more.</p>
               </div>
             </Link>
-            <Link href="/projects/Ultra-Nightmare" className="items-center flex gap-x-6 pointer-events-auto bg-amber-500/35 hover:bg-amber-500/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <MotionLink href="/projects/Ultra-Nightmare" className="items-center flex gap-x-6 bg-amber-500/35 hover:bg-amber-500/50 border border-white/20 w-full p-6 rounded-xl transition-colors duration-300 cursor-pointer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6 }}>
               <img src="/ultra_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -126,8 +152,13 @@ export default function Home() {
                 <p className="font-bold text-xl">Ultra-Nightmare</p>
                 <p className="text-white/80 text-sm">Dead employees will only come back to life once the quota is met. If your entire crew dies, you'll get fired.</p>
               </div>
-            </Link>
-            <Link href="/projects/LethalDebt" className="items-center flex gap-x-6 pointer-events-auto bg-green-700/35 hover:bg-green-700/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            </MotionLink>
+            <MotionLink href="/projects/LethalDebt" className="items-center flex gap-x-6  bg-green-700/35 hover:bg-green-700/50 border border-white/20 w-full p-6 rounded-xl transition-colors duration-300 cursor-pointer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6 }}
+            >
               <img src="/debt_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -137,8 +168,8 @@ export default function Home() {
                 <p className="font-bold text-xl">LethalDebt</p>
                 <p className="text-white/80 text-sm">Allows you to be financially irresponsible by letting you purchase things you can't afford, no matter how expensive.</p>
               </div>
-            </Link>
-            <Link href="/projects/KeepEnemyPower" className="items-center flex gap-x-6 pointer-events-auto bg-gray-600/35 hover:bg-gray-600/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            </MotionLink>
+            <Link href="/projects/KeepEnemyPower" className="items-center flex gap-x-6  bg-gray-600/35 hover:bg-gray-600/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/keep_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -149,7 +180,7 @@ export default function Home() {
                 <p className="text-white/80 text-sm">Prevents the current power level of a moon from going down when an enemy dies.</p>
               </div>
             </Link>
-            <Link href="/projects/Extra-Enchantments-and-Curses" className="items-center flex gap-x-6 pointer-events-auto bg-purple-500/35 hover:bg-purple-500/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="/projects/Extra-Enchantments-and-Curses" className="items-center flex gap-x-6  bg-purple-500/35 hover:bg-purple-500/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/eec_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -160,7 +191,7 @@ export default function Home() {
                 <p className="text-white/80 text-sm">This mod adds 25 new Enchantments and 9 new Curses to Minecraft, all with their own unique quirks, uses and mechanics.</p>
               </div>
             </Link>
-            <Link href="/projects/Minecraft-Classic-Edition" className="items-center flex gap-x-6 pointer-events-auto bg-white/35 hover:bg-white/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="/projects/Minecraft-Classic-Edition" className="items-center flex gap-x-6  bg-white/35 hover:bg-white/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/mcce_icon.gif" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -171,7 +202,7 @@ export default function Home() {
                 <p className="text-white/80 text-sm">A resource pack that aims to bring back the classic feel of Minecraft.</p>
               </div>
             </Link>
-            <Link href="/projects/ranDOOM" className="items-center flex gap-x-6 pointer-events-auto bg-gray-400/35 hover:bg-gray-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
+            <Link href="/projects/ranDOOM" className="items-center flex gap-x-6  bg-gray-400/35 hover:bg-gray-400/50 border border-white/20 w-full p-6 rounded-xl transition-all duration-300 cursor-pointer">
               <img src="/ranDOOM_icon.png" alt="" className="w-41 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
@@ -185,11 +216,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="videos" className="flex justify-center items-center w-full"></section>
+      <section id="videos" className="flex justify-center items-center w-full">
+        <div className="glass-element w-[85%] flex flex-col gap-y-6">
+          <p className="font-bold text-4xl mb-4">Videos</p>
+
+        </div>
+      </section>
       <section id="contact" className="flex justify-center items-center w-full">
-        <div className="glass-element w-[80%] flex flex-col gap-y-6">
+        <div className="glass-element w-[85%] flex flex-col gap-y-6">
           <p className="font-bold text-4xl mb-4">Contact</p>
-          <p className="text-white/80 text-xl">You can get in contact with me through my email at <Link href="mailto:pyjoso3vitaslim@gmail.com" className="text-blue-500 font-bold pointer-events-auto hover:text-[#C9080E] transition-all duration-300 hover:scale-105">pyjoso3vitaslim@gmail.com</Link> or through my <Link href="https://discord.com/users/544234654203379727" target="_blank" className="text-blue-500 font-bold pointer-events-auto hover:text-[#C9080E] transition-all duration-300 hover:scale-105">Discord</Link>.</p>
+          <p className="text-white/80 text-xl">You can get in contact with me through my email at <Link href="mailto:pyjoso3vitaslim@gmail.com" className="text-blue-500 font-bold hover:text-rose-500 red-underline">pyjoso3vitaslim@gmail.com</Link> or through my <Link href="https://discord.com/users/544234654203379727" target="_blank" className="text-blue-500 font-bold  hover:text-rose-500 red-underline">Discord</Link>.</p>
         </div>
       </section>
     </>

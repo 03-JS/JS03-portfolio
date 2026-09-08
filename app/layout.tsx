@@ -29,32 +29,33 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-mono", jetbrainsMono.variable)}
     >
-      <body className="min-h-full flex flex-col items-center bg-black text-white font-sans" cz-shortcut-listen="true">
+      <body className="min-h-full flex flex-col items-center bg-black text-white font-sans overflow-x-hidden" cz-shortcut-listen="true">
         <div className="fixed inset-0 h-screen w-screen overflow-hidden">
           <ColorBends
             colors={["#7700ff", "#7700ff", "#7700ff"]}
             speed={0.2}
-            frequency={1.0}
+            frequency={1}
             noise={0}
             bandWidth={3}
             rotation={90}
             iterations={3}
             intensity={2}
             autoRotate={1}
+            className="animate-fade-in animate-duration-750"
           />
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold">
-          <Link href="/" className="flex gap-x-3 items-center justify-center pointer-events-auto hover:text-[#ff0000] transition-all duration-300">
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold animate-fade-in-down animate-duration-1000">
+          <Link href="/" className="flex gap-x-3 items-center justify-center p-2 rounded-lg red-background-swipe">
             <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-10 h-10 rounded-full" />
             JS03
           </Link>
-          <div className="flex gap-x-8 items-center justify-center">
-            <Link href="#projects" className="nav-text">Projects</Link>
-            <Link href="#videos" className="nav-text">Videos</Link>
-            <Link href="#contact" className="nav-text">Contact</Link>
+          <div className="flex gap-x-6 items-center justify-center">
+            <Link href="#projects" className="nav-text red-background-swipe rounded-lg p-2">Projects</Link>
+            <Link href="#videos" className="nav-text red-background-swipe rounded-lg p-2">Videos</Link>
+            <Link href="#contact" className="nav-text red-background-swipe rounded-lg p-2">Contact</Link>
           </div>
         </header>
-        <main className="z-0 min-h-screen flex flex-col pointer-events-none justify-center items-center gap-y-8 mt-26 mb-8 w-screen p-0">
+        <main className="z-0 min-h-screen flex flex-col justify-center items-center gap-y-8 mt-5 mb-8 w-screen p-0">
           <TooltipProvider>{children}</TooltipProvider>
         </main>
       </body>
