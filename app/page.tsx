@@ -12,9 +12,9 @@ const MotionLink = motion.create(Link);
 export default function Home() {
   return (
     <>
-      <section id="home" className="flex justify-center items-center w-full h-screen">
-        <div className="glass-element bg-black/70 p-0 w-[85%] h-fit flex flex-col justify-start gap-x-8 animate-fade-in-up animate-duration-1000 font-mono">
-          <div className="glass-element border-t-0 border-l-0 border-r-0 rounded-br-none rounded-bl-none w-full flex justify-between items-center p-4 fixed top-0">
+      <section id="home" className="flex justify-center items-center w-full h-screen scroll-mt-24">
+        <div className="glass-element bg-black/70 p-0 w-[85%] h-fit flex flex-col gap-x-8 animate-fade-in-up animate-duration-1000 font-mono">
+          <div className="glass-element border-t-0 border-l-0 border-r-0 rounded-br-none rounded-bl-none w-full h-fit flex justify-between p-4 relative top-0">
             <div className="flex gap-x-2 items-center justify-center">
               <span className="w-3 h-3 rounded-full bg-[#ff6b6b]"></span>
               <span className="w-3 h-3 rounded-full bg-[#ffd93d]"></span>
@@ -22,11 +22,11 @@ export default function Home() {
             </div>
             <span className="text-sm text-white/50">~/.profiles/js03</span>
           </div>
-          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-600 mt-12">
+          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-600 mb-auto">
             <p className="text-blue-500">~</p>
             <p><span className="text-purple-500">{'>'}</span> fastfetch</p>
           </div>
-          <div className="flex flex-row w-full p-10 items-start gap-x-8 animate-fade-in-up animate-duration-600 animate-delay-800">
+          <div className="flex flex-col lg:flex-row w-full p-4 sm:p-8 md:p-10 items-center md:items-start gap-6 md:gap-8 animate-fade-in-up animate-duration-600 animate-delay-800">
             <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-4xl w-64 transition-all duration-400 hover:ring-2 hover:ring-rose-500 hover:shadow-[0px_0px_25px_rgba(255,32,86,1)] hover:border-black" />
             <div className="flex flex-col justify-center w-full">
               <p className="text-5xl font-bold">Hi! I'm JS03</p>
@@ -95,13 +95,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1300">
+          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1300 mt-auto">
             <p className="text-blue-500">~</p>
             <p><span className="text-purple-500">{'>'}</span> <span className="animate-caret-blink">_</span></p>
           </div>
         </div >
       </section>
-      <section id="projects" className="flex justify-center items-center w-full">
+      <section id="projects" className="flex justify-center items-center w-full scroll-mt-24">
         <motion.div className="glass-element w-[85%] flex flex-col gap-y-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function Home() {
               <img src="/VEGA_icon.png" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Lethal Company mod</span>
                 </div>
                 <p className="font-bold text-xl">LC-VEGA</p>
@@ -136,7 +136,7 @@ export default function Home() {
               <img src="/speech_icon.png" alt="" className="w-32 h-32 rounded-xl" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Lethal Company API</span>
                 </div>
                 <p className="font-bold text-xl">SpeechRecognitionAPI</p>
@@ -155,11 +155,12 @@ export default function Home() {
               <img src="/FNaF Rewired Icon.png" alt="" className="w-32 h-32 border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/godot_icon.webp" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/godot_icon.webp" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Godot game</span>
                 </div>
                 <p className="font-bold text-xl">Five Nights at Freddy's Rewired</p>
                 <p className="text-white/80 text-sm">Five Nights at Freddy's Rewired is a re-imagining of the original Five Nights at Freddy's game that features an actual 3D environment, new mechanics, easter eggs and more.</p>
+                <p className="text-white/80 text-sm flex gap-x-2 items-center">Available for<img src="windows-white-icon.webp" className="w-4" /><img src="linux_icon_2.webp" className="w-4" /></p>
                 <div className="flex gap-x-3 mt-auto">
                   <Link href="https://gamejolt.com/games/FNaF-Rewired/1014231" target="_blank" className="flex gap-x-2 justify-center items-center bg-[#2F7F6F]/20 hover:bg-[#2F7F6F]/35 transition-all duration-400 rounded-sm p-2 w-fit border border-white/20 text-sm"><img src="/gamejolt_icon.png" className="w-6" />Game Jolt page</Link>
                   <Link href="https://js03.itch.io/fnaf-rewired" target="_blank" className="flex gap-x-2 justify-center items-center bg-[#FA5252]/20 hover:bg-[#FA5252]/35 transition-all duration-400 rounded-sm p-2 w-fit border border-white/20 text-sm"><img src="/itchio_white_icon.webp" className="w-6" />itch.io page</Link>
@@ -174,7 +175,7 @@ export default function Home() {
               <img src="/ultra_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Lethal Company mod</span>
                 </div>
                 <p className="font-bold text-xl">Ultra-Nightmare</p>
@@ -190,10 +191,10 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6 }}>
-              <img src="/debt_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
+              <img src="/debt_icon.png" alt="" className="w-32 h-32 rounded-xl" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Lethal Company mod</span>
                 </div>
                 <p className="font-bold text-xl">LethalDebt</p>
@@ -212,7 +213,7 @@ export default function Home() {
               <img src="/keep_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 border border-white/20 rounded-sm" />
+                  <img src="/lethal_icon.jpg" alt="" className="w-6 h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Lethal Company mod</span>
                 </div>
                 <p className="font-bold text-xl">Keep Enemy Power</p>
@@ -231,7 +232,7 @@ export default function Home() {
               <img src="/eec_icon.png" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/minecraft_icon.webp" alt="" className="w-5 h-5 border border-white/20" />
+                  <img src="/minecraft_icon.webp" alt="" className="w-5 h-5" />
                   <span className="text-white/60 text-xs">Minecraft mod</span>
                 </div>
                 <p className="font-bold text-xl">Extra Enchantments & Curses</p>
@@ -251,7 +252,7 @@ export default function Home() {
               <img src="/mcce_icon.gif" alt="" className="w-32 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/minecraft_icon.webp" alt="" className="w-5 h-5 border border-white/20" />
+                  <img src="/minecraft_icon.webp" alt="" className="w-5 h-5" />
                   <span className="text-white/60 text-xs">Minecraft resource pack</span>
                 </div>
                 <p className="font-bold text-xl">Minecraft: Classic Edition</p>
@@ -269,7 +270,7 @@ export default function Home() {
               <img src="/ranDOOM_icon.png" alt="" className="w-41 h-32 rounded-xl border border-white/20" />
               <div className="flex flex-col gap-y-3">
                 <div className="flex gap-x-[0.35rem] items-center">
-                  <img src="/unity_icon.png" alt="" className="w-[1.4rem] h-6 border border-white/20 rounded-sm" />
+                  <img src="/unity_icon.png" alt="" className="w-fit h-6 rounded-sm" />
                   <span className="text-white/60 text-xs">Unity game</span>
                 </div>
                 <p className="font-bold text-xl">ranDOOM</p>
@@ -283,7 +284,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-      <section id="videos" className="flex justify-center items-center w-full">
+      <section id="videos" className="flex justify-center items-center w-full scroll-mt-24">
         <motion.div className="glass-element w-[85%] flex flex-col gap-y-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -331,7 +332,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6 }} />
-            <motion.iframe src="https://www.youtube.com/embed/Y_mSrBwiR70?si=UuRZaVc189dBzp2I" allowFullScreen className="aspect-video w-full h-full border border-white/20 rounded-lg"
+            {/* <motion.iframe src="https://www.youtube.com/embed/Y_mSrBwiR70?si=UuRZaVc189dBzp2I" allowFullScreen className="aspect-video w-full h-full border border-white/20 rounded-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -350,11 +351,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6 }} />
+              transition={{ duration: 0.6 }} /> */}
           </div>
         </motion.div>
       </section>
-      <section id="contact" className="flex justify-center items-center w-full">
+      <section id="contact" className="flex justify-center items-center w-full scroll-mt-24">
         <motion.div className="glass-element w-[85%] flex flex-col gap-y-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
