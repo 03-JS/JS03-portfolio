@@ -32,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col items-center bg-black text-white font-sans overflow-x-hidden" cz-shortcut-listen="true">
         <div className="fixed inset-0 h-screen w-screen overflow-hidden">
           <ColorBends
-            colors={["#7700ff", "#7700ff", "#7700ff"]}
+            colors={["#ec003f", "#ec003f", "#ec003f"]}
             speed={0.2}
             frequency={1}
             noise={0}
@@ -44,15 +44,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             className="animate-fade-in animate-duration-750"
           />
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center pointer-events-none z-1 font-bold animate-fade-in-down animate-duration-1000">
-          <Link href="/" className="flex gap-x-3 items-center justify-center p-2 rounded-lg red-background-swipe">
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-screen h-18 flex justify-between gap-x-10 items-center z-1 font-bold animate-fade-in-down animate-duration-600">
+          <a href="/" className="flex gap-x-3 items-center justify-center p-2 rounded-lg red-background-swipe">
             <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-10 h-10 rounded-full" />
             JS03
-          </Link>
+          </a>
           <div className="flex gap-x-6 items-center justify-center">
-            <Link href="#projects" className="nav-text red-background-swipe rounded-lg p-2">Projects</Link>
-            <Link href="#videos" className="nav-text red-background-swipe rounded-lg p-2">Videos</Link>
-            <Link href="#contact" className="nav-text red-background-swipe rounded-lg p-2">Contact</Link>
+            <a href="#projects" className="nav-text red-background-swipe rounded-lg p-2">Projects</a>
+            <a href="#videos" className="nav-text red-background-swipe rounded-lg p-2">Videos</a>
+            <a href="#contact" className="nav-text red-background-swipe rounded-lg p-2">Contact</a>
           </div>
         </header>
         <main className="z-0 min-h-screen flex flex-col justify-center items-center gap-y-8 mt-5 mb-8 w-screen p-0">

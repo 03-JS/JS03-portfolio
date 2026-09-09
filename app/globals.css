@@ -139,11 +139,11 @@
   }
 
   .red-underline {
-    @apply bg-bottom-left bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] transition-all duration-300 ease-out;
+    @apply bg-bottom-left bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] transition-all duration-400 ease-out;
   }
 
   .red-background-swipe {
-    @apply pointer-events-auto bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] transition-all duration-300 ease-out;
+    @apply pointer-events-auto bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] transition-all duration-400 ease-out;
   }
 }
 
