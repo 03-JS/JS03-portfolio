@@ -63,7 +63,7 @@ export default function Home() {
                   </TooltipContent>
                 </Tooltip>
                 <Tooltip>
-                  <Link href="https://thunderstore.io/c/lethal-company/p/JS03/?ordering=most-downloaded" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-800 cursor-pointer bg-[#14B3CB]/20 hover:bg-[#14B3CB]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-400"><img className="w-9" src="/thunderstore_icon.png" alt="thunderstore icon" /></TooltipTrigger></Link>
+                  <Link href="https://thunderstore.io/c/lethal-company/p/JS03/?ordering=most-downloaded" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-800 cursor-pointer bg-[#14B3CB]/20 hover:bg-[#14B3CB]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-400"><img className="w-8" src="/thunderstore_icon.png" alt="thunderstore icon" /></TooltipTrigger></Link>
                   <TooltipContent className="rounded-lg font-bold text-sm">
                     <p className="font-mono">Thunderstore</p>
                   </TooltipContent>
@@ -90,6 +90,12 @@ export default function Home() {
                   <Link href="https://discord.gg/myZrktknah" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-1200 cursor-pointer bg-[#5665ED]/20 hover:bg-[#5665ED]/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-400"><img className="w-8" src="/discord-white-icon.webp" alt="discord icon" /></TooltipTrigger></Link>
                   <TooltipContent className="rounded-lg font-bold text-sm">
                     <p className="font-mono">Discord</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <Link href="https://steamcommunity.com/id/JS_03/" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-1300 cursor-pointer bg-sky-500/20 hover:bg-sky-500/35 border border-white/20 rounded-xl w-fit p-3 transition-all duration-400"><img className="w-8" src="/steam-icon.webp" alt="discord icon" /></TooltipTrigger></Link>
+                  <TooltipContent className="rounded-lg font-bold text-sm">
+                    <p className="font-mono">Steam</p>
                   </TooltipContent>
                 </Tooltip>
               </div>
