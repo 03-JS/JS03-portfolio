@@ -131,6 +131,16 @@
     @apply font-mono;
     scroll-behavior: smooth;
   }
+
+  .theme-opera {
+    --accent-gradient-from: var(--color-red-800);
+    --accent-gradient-to: var(--color-rose-500);
+  }
+
+  .theme-ec-irumi {
+    --accent-gradient-from: var(--color-violet-900);
+    --accent-gradient-to: var(--color-violet-600);
+  }
 }
 
 @layer components {
@@ -139,20 +149,10 @@
   }
 
   .red-underline {
-    @apply bg-bottom-left bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] transition-all duration-400 ease-out;
+    @apply bg-bottom-left bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] transition-all duration-400 ease-out;
   }
 
   .red-background-swipe {
-    @apply pointer-events-auto bg-linear-to-r from-red-800 to-rose-500 bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] transition-all duration-400 ease-out;
-  }
-}
-
-@layer base {
-  .font-outline {
-    -webkit-text-stroke: 1px black;
-  }
-
-  .font-outline-red {
-    -webkit-text-stroke: 1px red;
+    @apply pointer-events-auto bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] transition-all duration-400 ease-out;
   }
 }

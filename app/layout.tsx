@@ -28,10 +28,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-mono", jetbrainsMono.variable)}
     >
-    <body className="min-h-full flex flex-col items-center bg-black text-white font-sans overflow-x-hidden" cz-shortcut-listen="true">
+    <body className="theme-ec-irumi min-h-full flex flex-col items-center bg-black text-white font-sans overflow-x-hidden" cz-shortcut-listen="true">
       <div className="fixed inset-0 h-screen w-screen overflow-hidden">
         <ColorBends
-          colors={["#ec003f", "#ec003f", "#ec003f"]}
+          // colors={["#ec003f", "#ec003f", "#ec003f"]} // Opera theme
+          colors={["#7008e7", "#7008e7", "#7008e7"]} // Irumi purple theme
           speed={0.2}
           frequency={1}
           noise={0}

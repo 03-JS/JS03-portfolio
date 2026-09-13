@@ -27,7 +27,7 @@ export default function Home() {
             <p><span className="text-purple-500">{'>'}</span> fastfetch</p>
           </div>
           <div className="flex flex-col lg:flex-row w-full p-4 sm:p-8 md:p-10 items-center md:items-start gap-6 md:gap-8 animate-fade-in-up animate-duration-600 animate-delay-800">
-            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-4xl w-64 transition-all duration-400 hover:ring-2 hover:ring-rose-500 hover:shadow-[0px_0px_25px_rgba(255,32,86,1)] hover:border-black" />
+            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-4xl w-64 transition-all duration-400 hover:ring-2 hover:ring-(--accent-gradient-to) hover:shadow-[0px_0px_25px_var(--accent-gradient-to)] hover:border-black" />
             <div className="flex flex-col justify-center w-full">
               <p className="text-5xl font-bold">Hi! I'm JS03</p>
               <p className="mt-3 text-white/80">
@@ -40,7 +40,7 @@ export default function Home() {
                 I have also made a couple of games in my free time using the <span className="font-bold">Godot</span> and <span className="font-bold">Unity</span> game engines, which you can check out below.
               </p>
               <p className="mt-3 text-white/80">
-                And last but not least, I have a <Link href="https://www.youtube.com/@JS03" target="_blank" className=" text-blue-500 font-bold hover:text-rose-500 red-underline">YouTube channel</Link> with over 2.7k subscribers in which I occasionally upload content related to things I like, such as Minecraft shader comparisons or showcases or DOOM soundtrack game rips that I have made in my free time.
+                And last but not least, I have a <Link href="https://www.youtube.com/@JS03" target="_blank" className=" text-blue-500 font-bold hover:text-(--accent-gradient-to) red-underline">YouTube channel</Link> with over 2.7k subscribers in which I occasionally upload content related to things I like, such as Minecraft shader comparisons or showcases or DOOM soundtrack game rips that I have made in my free time.
               </p>
               <div className="flex gap-x-6 mt-10 items-center">
                 <Link href="https://ko-fi.com/js033" target="_blank" className="animate-fade-in-up animate-duration-600 animate-delay-400 flex gap-x-2 justify-center items-center bg-[#72a4f2] shadow-[0px_0px_15px_rgba(114,164,242,1)] hover:shadow-[0px_0px_25px_rgba(114,164,242,1)] hover:scale-105 transition-all duration-400 rounded-sm p-3 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-9" />Support me on Ko-fi</Link>
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1300 mt-auto">
+          <div className="flex flex-col w-full p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1400 mt-auto">
             <p className="text-blue-500">~</p>
             <p><span className="text-purple-500">{'>'}</span> <span className="animate-caret-blink">_</span></p>
           </div>
@@ -368,7 +368,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}>
           <p className="font-bold text-4xl mb-4">Contact</p>
-          <p className="text-white/80 text-xl">You can get in contact with me through my email at <Link href="mailto:pyjoso3vitaslim@gmail.com" className="text-blue-500 font-bold hover:text-rose-500 red-underline">pyjoso3vitaslim@gmail.com</Link> or through my <Link href="https://discord.com/users/544234654203379727" target="_blank" className="text-blue-500 font-bold  hover:text-rose-500 red-underline">Discord</Link>.</p>
+          <p className="text-white/80 text-xl">You can get in contact with me through my email at <Link href="mailto:pyjoso3vitaslim@gmail.com" className="text-blue-500 font-bold hover:text-(--accent-gradient-to) red-underline">pyjoso3vitaslim@gmail.com</Link> or through my <Link href="https://discord.com/users/544234654203379727" target="_blank" className="text-blue-500 font-bold  hover:text-(--accent-gradient-to) red-underline">Discord</Link>.</p>
         </motion.div>
       </section>
     </>
