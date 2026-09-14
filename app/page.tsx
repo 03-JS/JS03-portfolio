@@ -16,34 +16,36 @@ export default function Home() {
         <div className="glass-element bg-black/70 p-0 w-[85%] max-w-6xl overflow-hidden lg:overflow-auto lg:max-w-[85%] h-fit flex flex-col gap-x-8 animate-fade-in-up animate-duration-1000 font-mono">
           <div className="glass-element border-t-0 border-l-0 border-r-0 rounded-br-none rounded-bl-none w-full h-fit flex justify-between p-4 relative top-0">
             <div className="flex gap-x-2 items-center justify-center">
-              <span className="w-3 h-3 rounded-full bg-[#ff6b6b]"></span>
-              <span className="w-3 h-3 rounded-full bg-[#ffd93d]"></span>
-              <span className="w-3 h-3 rounded-full bg-[#b7d86a]"></span>
+              <span className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-[#ff6b6b]"></span>
+              <span className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-[#ffd93d]"></span>
+              <span className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-[#b7d86a]"></span>
             </div>
-            <span className="text-sm text-white/50">~/.profiles/js03</span>
+            <span className="text-xs lg:text-sm text-white/50">~/.profiles/js03</span>
           </div>
-          <div className="flex flex-col w-full p-4 sm:p-6 lg:p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-600 mb-auto">
+          <div className="flex flex-col w-full p-4 sm:p-6 lg:p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-600 mb-auto text-sm lg:text-base">
             <p className="text-blue-500">~</p>
             <p><span className="text-purple-500">{'>'}</span> fastfetch</p>
           </div>
-          <div className="flex flex-col lg:flex-row w-full p-4 sm:p-8 md:p-10 items-center md:items-start gap-6 md:gap-8 animate-fade-in-up animate-duration-600 animate-delay-800">
-            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-2xl w-56 lg:w-64 transition-all duration-400 hover:ring-2 active:ring-2 hover:ring-(--accent-gradient-to) active:ring-(--accent-gradient-to) hover:shadow-[0px_0px_25px_var(--accent-gradient-to)] active:shadow-[0px_0px_25px_var(--accent-gradient-to)] hover:border-black active:border-black" />
+          <div className="flex flex-col lg:flex-row w-full p-4 sm:p-8 md:p-10 items-center md:items-start gap-4 lg:gap-8 animate-fade-in-up animate-duration-600 animate-delay-800">
+            <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="border-2 border-white/20 rounded-2xl w-44 lg:w-64 transition-all duration-400 hover:ring-2 active:ring-2 hover:ring-(--accent-gradient-to) active:ring-(--accent-gradient-to) hover:shadow-[0px_0px_25px_var(--accent-gradient-to)] active:shadow-[0px_0px_25px_var(--accent-gradient-to)] hover:border-black active:border-black" />
             <div className="flex flex-col justify-center w-full">
-              <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left">Hi! I'm JS03</p>
-              <p className="mt-3 text-white/80">
+              <p className="text-2xl lg:text-5xl font-bold text-center lg:text-left">
+                Hi! I'm JS03
+              </p>
+              <p className="mt-3 text-white/80 text-sm lg:text-base">
                 Though most people just call me JS.
               </p>
-              <p className="mt-3 text-white/80">
+              <p className="mt-3 text-white/80 text-sm lg:text-base">
                 I'm a software developer with a passion for gaming, modding and game development. I have been creating content related to video games since 2018, some of which has been downloaded and/or viewed by millions of people around the world!
               </p>
-              <p className="mt-3 text-white/80">
+              <p className="mt-3 text-white/80 text-sm lg:text-base">
                 I have also made a couple of games in my free time using the <span className="font-bold">Godot</span> and <span className="font-bold">Unity</span> game engines, which you can check out below.
               </p>
-              <p className="mt-3 text-white/80">
+              <p className="mt-3 text-white/80 text-sm lg:text-base">
                 And last but not least, I have a <Link href="https://www.youtube.com/@JS03" target="_blank" className=" text-blue-500 font-bold hover:text-(--accent-gradient-to) active:text-(--accent-gradient-to) red-underline">YouTube channel</Link> with over 2.7k subscribers in which I occasionally upload content related to things I like, such as Minecraft shader comparisons or showcases or DOOM soundtrack game rips that I have made in my free time.
               </p>
-              <div className="flex flex-wrap gap-x-9 lg:gap-x-6 gap-y-4 mt-10 items-center justify-center lg:justify-start">
-                <Link href="https://ko-fi.com/js033" target="_blank" className="animate-fade-in-up animate-duration-600 animate-delay-400 flex gap-x-2 justify-center items-center bg-[#72a4f2] shadow-[0px_0px_15px_rgba(114,164,242,1)] hover:shadow-[0px_0px_25px_rgba(114,164,242,1)] active:shadow-[0px_0px_25px_rgba(114,164,242,1)] hover:scale-105 active:scale-105 transition-all duration-400 rounded-sm p-3 font-bold border border-white/20"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-9" />Support me on Ko-fi</Link>
+              <div className="flex flex-wrap gap-x-6 gap-y-4 mt-5 lg:mt-10 items-center justify-center lg:justify-start">
+                <Link href="https://ko-fi.com/js033" target="_blank" className="animate-fade-in-up animate-duration-600 animate-delay-400 flex gap-x-2 justify-center items-center bg-[#72a4f2] shadow-[0px_0px_15px_rgba(114,164,242,1)] hover:shadow-[0px_0px_25px_rgba(114,164,242,1)] active:shadow-[0px_0px_25px_rgba(114,164,242,1)] hover:scale-105 active:scale-105 transition-all duration-400 rounded-sm p-3 font-bold border border-white/20 text-sm sm:text-base"><img src="/kofi_symbol.png" alt="ko-fi icon" className="w-9" />Support me on Ko-fi</Link>
                 <Tooltip>
                   <Link href="https://github.com/03-JS" target="_blank"><TooltipTrigger className="animate-fade-in-up animate-duration-600 animate-delay-500 cursor-pointer bg-white/10 hover:bg-white/25 active:bg-white/25 border border-white/20 rounded-xl w-fit p-3 transition-all duration-400"><img className="w-8" src="/github-white-icon.webp" alt="github icon" /></TooltipTrigger></Link>
                   <TooltipContent className="rounded-lg font-bold text-sm">
@@ -101,7 +103,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-4 sm:p-6 lg:p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1400 mt-auto">
+          <div className="flex flex-col w-full p-4 sm:p-6 lg:p-10 items-start gap-x-8 font-bold animate-fade-in animate-duration-600 animate-delay-1400 mt-auto text-sm lg:text-base">
             <p className="text-blue-500">~</p>
             <p><span className="text-purple-500">{'>'}</span> <span className="animate-caret-blink">_</span></p>
           </div>

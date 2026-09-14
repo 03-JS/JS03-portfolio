@@ -44,12 +44,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             className="animate-fade-in animate-duration-750"
           />
         </div>
-        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-full h-18 flex justify-between gap-x-4 sm:gap-x-10 items-center z-50 font-bold px-4 sm:px-8">
+        <header className="glass-element border-t-0 border-l-0 border-r-0 rounded-none fixed top-0 w-full h-18 flex justify-between gap-x-4 sm:gap-x-10 items-center z-50 font-bold px-2 sm:px-8">
           <a href="/" className="flex gap-x-3 items-center justify-center p-2 rounded-lg red-background-swipe shrink-0 text-sm sm:text-base">
             <img src="https://avatars.githubusercontent.com/u/107844615?v=4" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full" alt="JS03 Avatar" />
             JS03
           </a>
-          <div className="flex gap-x-3 sm:gap-x-6 items-center justify-center text-xs sm:text-base">
+          <div className="flex gap-x-1.5 sm:gap-x-6 items-center justify-center text-xs sm:text-base">
             <a href="#projects" className="nav-text red-background-swipe rounded-lg p-1.5 sm:p-2">Projects</a>
             <a href="#videos" className="nav-text red-background-swipe rounded-lg p-1.5 sm:p-2">Videos</a>
             <a href="#contact" className="nav-text red-background-swipe rounded-lg p-1.5 sm:p-2">Contact</a>
