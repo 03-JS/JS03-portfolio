@@ -55,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <a href="#contact" className="nav-text red-background-swipe rounded-lg p-1.5 sm:p-2">Contact</a>
           </div>
         </header>
-        <main className="z-0 min-h-screen flex flex-col justify-center items-center gap-y-8 mt-5 mb-8 w-screen lg:p-0">
+        <main className="z-0 min-h-screen flex flex-col justify-center items-center gap-y-8 mt-5 mb-8 w-screen 3xl:p-0">
           <TooltipProvider>{children}</TooltipProvider>
         </main>
       </body>
