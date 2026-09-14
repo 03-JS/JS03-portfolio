@@ -12,7 +12,7 @@ const MotionLink = motion.create(Link);
 export default function Home() {
   return (
     <>
-      <section id="home" className="flex justify-center items-center w-full 3xl:h-screen scroll-mt-24 mt-20 lg:mt-18 lg:mb-10 3xl:mb-0 3xl:mt-0 3xl:py-0">
+      <section id="home" className="flex justify-center items-center w-full 3xl:h-screen scroll-mt-24 mt-20 lg:mt-17 lg:mb-10 3xl:mb-0 3xl:mt-0 3xl:py-0">
         <div className="glass-element bg-black/70 p-0 w-[85%] max-w-6xl overflow-hidden 3xl:overflow-auto lg:max-w-[85%] h-fit flex flex-col gap-x-8 animate-fade-in-up animate-duration-1000 font-mono">
           <div className="glass-element border-t-0 border-l-0 border-r-0 rounded-br-none rounded-bl-none w-full h-fit flex justify-between p-4 relative top-0">
             <div className="flex gap-x-2 items-center justify-center">
