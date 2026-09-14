@@ -15,3 +15,4 @@ This site wasn't created with the intention of being a template or theme, but fo
 
 - [Next.js](https://nextjs.org/): UI framework
 - [Tailwind CSS](https://tailwindcss.com/): CSS Styling and UI
+- [Netlify](https://www.netlify.com/): Hosting and deployment
