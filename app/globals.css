@@ -149,10 +149,10 @@
   }
 
   .red-underline {
-    @apply bg-bottom-left bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] transition-all duration-400 ease-out;
+    @apply bg-bottom-left bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_2px] bg-no-repeat hover:bg-size-[100%_2px] active:bg-size-[100%_2px] transition-all duration-400 ease-out;
   }
 
   .red-background-swipe {
-    @apply pointer-events-auto bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] transition-all duration-400 ease-out;
+    @apply pointer-events-auto bg-linear-to-r from-(--accent-gradient-from) to-(--accent-gradient-to) bg-size-[0%_100%] bg-no-repeat hover:bg-size-[100%_100%] active:bg-size-[100%_100%] transition-all duration-400 ease-out;
   }
 }
