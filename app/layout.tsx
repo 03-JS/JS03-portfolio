@@ -20,6 +20,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "JS03 - Software developer",
   description: "Software developer with a passion for gaming, modding and game development. This is my own personal website!",
+  openGraph: {
+    type: 'website',
+    url: 'https://js03-dev.netlify.app/',
+    title: 'JS03 - Software developer',
+    description: 'Software developer with a passion for gaming, modding and game development. This is my own personal website!',
+    images: [
+      {
+        url: 'https://avatars.githubusercontent.com/u/107844615?v=4',
+        width: 600,
+        height: 600,
+        alt: 'JS03 Preview Image',
+      },
+    ],
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
