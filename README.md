@@ -7,7 +7,7 @@ This is the public repository for my own personal website.
 
 This site wasn't created with the intention of being a template or theme, but for my own personal use. Feel free to take inspiration from it or copy it, but just know the code was not written with the intention of being cloned and deployed. As such, I won't provide support or assistance with that.
 
-## Site previews
+## Site preview
 
 ![home](https://i.ibb.co/Kp5ZsjFM/Screenshot-20260914-032947.png)
 
