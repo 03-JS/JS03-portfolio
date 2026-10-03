@@ -9,7 +9,7 @@ This site wasn't created with the intention of being a template or theme, but fo
 
 ## Site preview
 
-![home](https://i.ibb.co/Kp5ZsjFM/Screenshot-20260914-032947.png)
+![home](https://i.ibb.co/zVGYxqng/Screenshot-20261003-125414.png)
 
 ## Tech Stack
 
